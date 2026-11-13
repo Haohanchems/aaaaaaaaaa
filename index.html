@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thư viện ảnh tương tác</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="addTabFocus()">
+  <header>
+    <h1>Thư viện ảnh tương tác</h1>
+  </header>
+
+  <main>
+    <div id="image" aria-live="polite">Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.</div>
+
+    <div class="gallery">
+      <img class="preview" src="anh1.jpg" alt="Hoàng hôn trên biển"
+           onmouseover="upDate(this)" onmouseleave="unDo()"
+           onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="anh2.jpg" alt="Dãy núi xanh dưới bầu trời trong"
+           onmouseover="upDate(this)" onmouseleave="unDo()"
+           onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="anh3.jpg" alt="Khu rừng thông xanh"
+           onmouseover="upDate(this)" onmouseleave="unDo()"
+           onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="anh4.jpg" alt="Sa mạc cát vàng lúc chiều"
+           onmouseover="upDate(this)" onmouseleave="unDo()"
+           onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="anh5.jpg" alt="Bầu trời đêm đầy sao với vầng trăng"
+           onmouseover="upDate(this)" onmouseleave="unDo()"
+           onfocus="upDate(this)" onblur="unDo()">
+      <img class="preview" src="anh6.jpg" alt="Núi tuyết mùa đông"
+           onmouseover="upDate(this)" onmouseleave="unDo()"
+           onfocus="upDate(this)" onblur="unDo()">
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
